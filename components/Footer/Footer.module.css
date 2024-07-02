@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+}
+
+.inner {
+  color: #ffd2c6;
+  background-color: #015b01;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+
+  a {
+    color: #ffd2c6;
+  }
+}
