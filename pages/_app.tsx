@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }: any) {
         </AppShell.Header>
         <AppShell.Main>
           <Component {...pageProps} />
+          
         </AppShell.Main>
         <AppShell.Footer>
           <Footer />

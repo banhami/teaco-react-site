@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
 }
 
 .polaroid {
@@ -28,9 +27,8 @@
 
 .polaroid {
   position: relative;
-  width: 200px;
-  height: auto;
-  padding: 10px;
+  padding: 20px;
+  height:auto;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
