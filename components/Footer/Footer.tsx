@@ -18,7 +18,7 @@ import {
 export function Footer() {
   return (
     <footer className={classes.footer}>
-      <Container className={classes.inner}>
+      <Container fluid className={classes.inner}>
         <Stack>
           <Text>
             <strong>Come say hi! ヾ(＾-＾)ノ</strong>

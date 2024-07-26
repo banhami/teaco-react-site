@@ -6,11 +6,11 @@
   color: #ffd2c6;
   background-color: #015b01;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding-top: var(--mantine-spacing-xl);
-  padding-bottom: var(--mantine-spacing-xl);
-
+  padding-top: var(--mantine-spacing-md);
+  padding-bottom: var(--mantine-spacing-md);
+  width: 100%;
   a {
     color: #ffd2c6;
   }
