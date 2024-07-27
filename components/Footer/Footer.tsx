@@ -31,7 +31,7 @@ export function Footer() {
               </Table.Tr>
               <Table.Tr style={{ borderBottom: "none" }}>
                 <Table.Td>Tuesday</Table.Td>
-                <Table.Td>CLOSED ╥﹏╥</Table.Td>
+                <Table.Td>CLOSED (ಥ﹏ಥ)</Table.Td>
               </Table.Tr>
               <Table.Tr style={{ borderBottom: "none" }}>
                 <Table.Td>Friday-Saturday</Table.Td>

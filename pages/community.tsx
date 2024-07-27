@@ -47,7 +47,6 @@ export default function CommunityPage() {
               caption={"Aaron"}
             />
           </Grid.Col>
-
         </Grid>
       </Container>
     </BackgroundImage>

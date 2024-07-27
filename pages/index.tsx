@@ -2,7 +2,7 @@ import { Text, Center, Container, Stack, Image, Grid, BackgroundImage, Space} fr
 
 export default function IndexPage() {
   return (
-    <BackgroundImage src={"/Background.png"}>
+    <BackgroundImage bga="local" src={"/Background.png"}>
       <Container>
         <Space h="md"/>
       {/* A grid allows you to lay out elements horizontally - elements take out a portion of the width based out of 12 */}

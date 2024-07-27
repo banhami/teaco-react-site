@@ -1,8 +1,7 @@
-import { Paper, Image, Text, Container } from "@mantine/core";
+import { Paper, Image, Text, Container, Transition, Overlay} from "@mantine/core";
 import {useHover} from '@mantine/hooks';
 import classes from "./Polaroid.module.css";
 
-// Try removing the '?' from caption - what happens in community.tsx when you do?
 interface PolaroidTypes {
   image: string;
   alt: string;
@@ -15,7 +14,9 @@ const{hovered, ref} = useHover();
   return (
     <Container className={classes.PolaroidBody}>
       <Paper h={400} w={250} shadow="lg" className={classes.polaroid}  style={{backgroundColor: true ? 'white' : 'grey'}} ref={ref}>
-        {hovered ? <Text> {caption} </Text> : <Image radius="md" h={320} src={image} alt={alt}/>}
+        {hovered ? 
+          <Text> {caption} </Text>
+          :<Image radius="md" h={320} src={image} alt={alt}/>}
       </Paper>
     </Container>
   );
