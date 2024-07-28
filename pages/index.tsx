@@ -38,8 +38,8 @@ export default function IndexPage() {
           </Center>
         </Grid.Col>
       </Grid> 
-      <Space h="md"/>
     </Container>
+      <Space h="xl"/>
     </BackgroundImage>
   );
 }

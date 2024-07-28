@@ -15,7 +15,7 @@ const{hovered, ref} = useHover();
     <Container className={classes.PolaroidBody}>
       <Paper h={400} w={250} shadow="lg" className={classes.polaroid}  style={{backgroundColor: true ? 'white' : 'grey'}} ref={ref}>
         {hovered ? 
-          <Text> {caption} </Text>
+          <Text ta="center"> {caption} </Text>
           :<Image radius="md" h={320} src={image} alt={alt}/>}
       </Paper>
     </Container>
