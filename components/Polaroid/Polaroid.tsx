@@ -1,4 +1,4 @@
-import { Paper, Image, Text, Container, Transition, Overlay} from "@mantine/core";
+import { Paper, Image, Text, Container, Transition, Overlay, BackgroundImage} from "@mantine/core";
 import {useHover} from '@mantine/hooks';
 import classes from "./Polaroid.module.css";
 
@@ -15,7 +15,7 @@ const{hovered, ref} = useHover();
     <Container className={classes.PolaroidBody}>
       <Paper h={400} w={250} shadow="lg" className={classes.polaroid}  style={{backgroundColor: true ? 'white' : 'grey'}} ref={ref}>
         {hovered ? 
-          <Text ta="center"> {caption} </Text>
+          <Text pt="10px" ta="center"> {caption} </Text>
           :<Image radius="md" h={320} src={image} alt={alt}/>}
       </Paper>
     </Container>
