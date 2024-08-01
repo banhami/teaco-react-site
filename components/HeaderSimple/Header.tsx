@@ -21,6 +21,7 @@ export function Header() {
       key={link.label}
       className={classes.navLink}
       data-active={active === link.link || undefined}
+      size = "lg"
       onClick={(event) => {
         event.preventDefault();
         setActive(link.link);

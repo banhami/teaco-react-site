@@ -1,0 +1,36 @@
+.polaroidBody {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.polaroid {
+  @mixin hover {
+    animation: sway 1s;
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.polaroid {
+  position: relative;
+  padding: 20px;
+  height:auto;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  border-bottom: 15px solid white;
+}

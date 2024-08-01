@@ -18,7 +18,7 @@ import {
 export function Footer() {
   return (
     <footer className={classes.footer}>
-      <Container className={classes.inner}>
+      <Container fluid className={classes.inner}>
         <Stack>
           <Text>
             <strong>Come say hi! ヾ(＾-＾)ノ</strong>
@@ -31,7 +31,7 @@ export function Footer() {
               </Table.Tr>
               <Table.Tr style={{ borderBottom: "none" }}>
                 <Table.Td>Tuesday</Table.Td>
-                <Table.Td>CLOSED ╥﹏╥</Table.Td>
+                <Table.Td>CLOSED (ಥ﹏ಥ)</Table.Td>
               </Table.Tr>
               <Table.Tr style={{ borderBottom: "none" }}>
                 <Table.Td>Friday-Saturday</Table.Td>
