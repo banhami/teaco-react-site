@@ -12,7 +12,7 @@ export default function CommunityPage() {
             <Polaroid 
               image={"./Drew.png"} 
               alt={"Drew"} 
-              caption={"Drew"}
+              caption={" Meet Drew! I dont think he has a favorite drink but I think his favorite memory is meeting his girlfriend here <3 Maybe you can find your SO here too!!!! "}
             />
           </Grid.Col>
 
@@ -26,25 +26,49 @@ export default function CommunityPage() {
 
           <Grid.Col span={3}>
           <Polaroid 
-              image={"./AaronTeaCoSite.jpeg"} 
+              image={"./Imran.png"} 
               alt={"Imran"} 
-              caption={"Meet Imran! His favorite drink is the Rosie. Meeting Trang"}
+              caption={"Meet Imran! His favorite drink at TeaCo is the Rosie. His Favorite memory from TeaCo is Meeting Trang (Boss Lady!)"}
             />
           </Grid.Col>
 
           <Grid.Col span={3}>
           <Polaroid 
-              image={"./AaronTeaCoSite.jpeg"} 
+              image={"./Alex.png"} 
               alt={"Alex"} 
-              caption={"Meet Alex! His favorite drink is the Starboy. I don't have a specific one, but honestly probably just walking in every time and getting to chat with Trang or whoever is there! The space is special to me because I feel like I'm visiting friends more than just visiting a shop (with the added bonus of some yummy drinks)"}
+              caption={"Meet Alex! His favorite drink is the Starboy. Alex doesnt have a specific favorite memory, but he says:probably just walking in every time and getting to chat with Trang or whoever is there! The space is special to me because I feel like I'm visiting friends more than just visiting a shop (with the added bonus of some yummy drinks) (He doesnt actually look like that)"}
             />
           </Grid.Col>
 
           <Grid.Col span={3}>
           <Polaroid 
-              image={"./AaronTeaCoSite.jpeg"} 
-              alt={"Aaron"} 
-              caption={"Aaron"}
+              image={"./caitlin.png"} 
+              alt={"Caitlin"} 
+              caption={"Meet Caitlin! Her favorite drink is the Cafe Sua Da. Her favorte memomry at TeaCo is simply all of the friends that she has made here at the shop"}
+            />
+          </Grid.Col>
+
+          <Grid.Col span={3}>
+          <Polaroid 
+              image={"./mimi.png"} 
+              alt={"Mimi"} 
+              caption={"Meet Mimi! "}
+            />
+          </Grid.Col>
+
+          <Grid.Col span={3}>
+          <Polaroid 
+              image={"./kathy.png"} 
+              alt={"Kathy"} 
+              caption={"Meet Mimi! "}
+            />
+          </Grid.Col>
+
+          <Grid.Col span={3}>
+          <Polaroid 
+              image={"./trang.png"} 
+              alt={"Trang"} 
+              caption={"Meet Trang"}
             />
           </Grid.Col>
         </Grid>
