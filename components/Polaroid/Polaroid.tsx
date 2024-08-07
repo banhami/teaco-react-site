@@ -13,10 +13,10 @@ export function Polaroid({ image, alt, caption }: PolaroidTypes) {
 const{hovered, ref} = useHover();
   return (
     <Container className={classes.PolaroidBody}>
-      <Paper h={400} w={250} shadow="lg" className={classes.polaroid}  style={{backgroundColor: true ? 'white' : 'grey'}} ref={ref}>
+      <Paper h={400} w={275} shadow="lg" className={classes.polaroid}  style={{backgroundColor: true ? 'white' : 'grey'}} ref={ref}>
         {hovered ? 
           <Text pt="10px" ta="center"> {caption} </Text>
-          :<Image radius="md" h={320} src={image} alt={alt}/>}
+          :<Image radius="md" h={330} src={image} alt={alt}/>}
       </Paper>
     </Container>
   );

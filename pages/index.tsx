@@ -34,21 +34,17 @@ export default function IndexPage() {
             >
               <Text fw={800}>About us:</Text>
               <Text>
-                Our story began in Spring of 2011 when our first-generation
-                family built a faraway home in the name of the Han River
-                restaurant in the neighborhood of Mukilteo. Since then, we
-                assimilated to the new culture by sharing our Asian love
-                language, through food. Food has always been a center of our
-                gatherings, a way to show affection and an invisible thread
-                connecting different generations.
+                Our story began in the spring of 2011 when our immigrant family built a faraway home 
+                in the name of the Han River restaurant in the neighborhood of Mukilteo. Since then, 
+                we assimilated into the new culture by sharing our Asian love language, through food. 
+                Food has always been at the center of our gatherings, a way to show affection and care, 
+                and an invisible thread connecting different generations.
               </Text>
               <Text>
-                Our story turned a page in Summer of 2022 when we evolved to
-                Teaco, with tea stands for bubble tea and co stands for
-                community. As our family deepen our roots in this neighborhood,
-                we yearn for a space of connections. With Teaco, we hope to
-                create a space that connect different generations, one sip at a
-                time.
+                Our story turned a page in the summer of 2022 when Han River evolved into Teaco, a bubble 
+                tea shop with community as a core value. Now deeply rooted in the neighborhood, we yearn 
+                for a space of inter-connections. With Teaco, we hope to create a space that bridges 
+                different generations and identities, one sip at a time.
               </Text>
             </Stack>
           </Center>

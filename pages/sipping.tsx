@@ -32,54 +32,23 @@ export default function Sipping() {
           flexDirection: "row",
         }}
       >
-      <Grid grow gutter="sm">
-        <Grid.Col span={2}>
-          <Link href="#milk_tea">
-            <Button variant="filled" color="#015b01">Milk Teas</Button>
-          </Link>
-        </Grid.Col>
-         
-        <Grid.Col span={2}>
-          <Link href="#fruit_tea">
-            <Button variant="filled" color="#015b01">Fruit Teas</Button>
-          </Link> 
-        </Grid.Col>
-
-        <Grid.Col span={2}>
-          <Link href="#smoothie">
-            <Button variant="filled" color="#015b01">Smoothies</Button>
-          </Link> 
-        </Grid.Col> 
-
-        <Grid.Col span={2}>
-          <Link href="#streetfood">
-            <Button variant="filled" color="#015b01">Streetfood</Button>
-          </Link>
-        </Grid.Col>
-
-        <Grid.Col span="auto">
-          <Link href="#lunch">
-            <Button variant="filled" color="#015b01">Lunch Menu</Button>
-          </Link> 
-        </Grid.Col>
-      </Grid>
         
       </Box>
 
         <Grid>
-          <Grid.Col span={{md:6}} id="milk_tea">
+          <Grid.Col span={{md:6}}>
             <Image src={"/1.png"} alt="Milk Tea Menu"></Image>
           </Grid.Col> 
-          <Grid.Col span={{md:6}} id="fruit_tea">
+          <Grid.Col span={{md:6}}>
             <Image src={"/fruity.png"} alt="Fruit Tea Menu"></Image>
           </Grid.Col> 
-          <Grid.Col span={{md:6}} id="smoothie">
+          <Grid.Col span={{md:6}}>
             <Image src={"/4.png"} alt="Smoothie Menu"></Image>
           </Grid.Col>  
-          <Grid.Col span={{md:6}} id="streetfood">
+          <Grid.Col span={{md:6}}>
             <Image src={"/6.png"} alt="Streetfood Menu"></Image>
           </Grid.Col> 
-          <Grid.Col span={{md:6}} id="lunch">
+          <Grid.Col span={{md:6}}>
             <Image src={"/lunch_menu.png"} alt="Lunch Menu"></Image>
           </Grid.Col> 
         </Grid>

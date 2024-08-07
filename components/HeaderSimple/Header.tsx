@@ -8,7 +8,7 @@ const navLinks = [
   { link: "/", label: "The Tea" },
   { link: "/community", label: "The Co" },
   { link: "/sipping", label: "Sipping" },
-  { link: "/loving", label: "Loving" },
+  //{ link: "/loving", label: "Loving" },
 ];
 
 export function Header() {
