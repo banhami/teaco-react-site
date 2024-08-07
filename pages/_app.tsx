@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: any) {
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
 
-      <AppShell header={{ height: 80 }} footer={{ height: 180 }}>
+      <AppShell header={{ height: 80 }} footer={{ height: 170 }}>
         <BackgroundImage bga="local" src={"/Background.png"}>
           <AppShell.Header style={{ background: "none", borderBottom: "none" }}>
           <Header />
