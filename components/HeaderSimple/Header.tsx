@@ -43,12 +43,16 @@ export function Header() {
         <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
       <Drawer
+        position="top"
         opened={opened}
         onClose={toggle}
-        title="Menu"
         padding="md"
         size="md"
         hiddenFrom="xs"
+        overlayProps={{
+          backgroundOpacity: 0.5,
+          blur: 4,
+        }}
       >
         {/* Render nav link items inside the Drawer */}
         <Stack>{items}</Stack>
