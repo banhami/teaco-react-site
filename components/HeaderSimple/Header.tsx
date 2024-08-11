@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Group, Burger, Button } from "@mantine/core";
+import { Container, Group, Burger, Button, Drawer, Stack } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./Header.module.css";
 import { useRouter } from "next/router";
@@ -12,20 +12,21 @@ const navLinks = [
 ];
 
 export function Header() {
-  const [opened, { toggle }] = useDisclosure(false);
-  const [active, setActive] = useState(navLinks[0].link);
   const router = useRouter();
+  const [opened, { toggle }] = useDisclosure(false);
+  const [active, setActive] = useState(router.pathname);
 
   const items = navLinks.map((link) => (
     <Button
       key={link.label}
       className={classes.navLink}
       data-active={active === link.link || undefined}
-      size = "lg"
+      size="lg"
       onClick={(event) => {
         event.preventDefault();
         setActive(link.link);
         router.push(link.link);
+        opened && toggle();
       }}
     >
       {link.label}
@@ -41,6 +42,17 @@ export function Header() {
 
         <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
+      <Drawer
+        opened={opened}
+        onClose={toggle}
+        title="Menu"
+        padding="md"
+        size="md"
+        hiddenFrom="xs"
+      >
+        {/* Render nav link items inside the Drawer */}
+        <Stack>{items}</Stack>
+      </Drawer>
     </header>
   );
 }

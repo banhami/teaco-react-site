@@ -17,17 +17,15 @@ export default function App({ Component, pageProps }: any) {
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
 
-      <AppShell header={{ height: 80 }} footer={{ height: 170 }}>
+      <AppShell header={{ height: 80 }}>
         <BackgroundImage bga="local" src={"/Background.png"}>
           <AppShell.Header style={{ background: "none", borderBottom: "none" }}>
-          <Header />
-        </AppShell.Header>
-        <AppShell.Main>
-          <Component {...pageProps} />
-        </AppShell.Main>
-        <AppShell.Footer>
+            <Header />
+          </AppShell.Header>
+          <AppShell.Main>
+            <Component {...pageProps} />
+          </AppShell.Main>
           <Footer />
-        </AppShell.Footer>
         </BackgroundImage>
       </AppShell>
     </MantineProvider>

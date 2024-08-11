@@ -5,9 +5,9 @@ import {
   Stack,
   Image,
   Grid,
-  BackgroundImage,
   Space,
 } from "@mantine/core";
+import { Footer } from "../components/Footer/Footer";
 
 export default function IndexPage() {
   return (
@@ -34,23 +34,26 @@ export default function IndexPage() {
             >
               <Text fw={800}>About us:</Text>
               <Text>
-                Our story began in the spring of 2011 when our immigrant family built a faraway home 
-                in the name of the Han River restaurant in the neighborhood of Mukilteo. Since then, 
-                we assimilated into the new culture by sharing our Asian love language, through food. 
-                Food has always been at the center of our gatherings, a way to show affection and care, 
-                and an invisible thread connecting different generations.
+                Our story began in the spring of 2011 when our immigrant family
+                built a faraway home in the name of the Han River restaurant in
+                the neighborhood of Mukilteo. Since then, we assimilated into
+                the new culture by sharing our Asian love language, through
+                food. Food has always been at the center of our gatherings, a
+                way to show affection and care, and an invisible thread
+                connecting different generations.
               </Text>
               <Text>
-                Our story turned a page in the summer of 2022 when Han River evolved into Teaco, a bubble 
-                tea shop with community as a core value. Now deeply rooted in the neighborhood, we yearn 
-                for a space of inter-connections. With Teaco, we hope to create a space that bridges 
-                different generations and identities, one sip at a time.
+                Our story turned a page in the summer of 2022 when Han River
+                evolved into Teaco, a bubble tea shop with community as a core
+                value. Now deeply rooted in the neighborhood, we yearn for a
+                space of inter-connections. With Teaco, we hope to create a
+                space that bridges different generations and identities, one sip
+                at a time.
               </Text>
             </Stack>
           </Center>
         </Grid.Col>
-      </Grid> 
-      <Space h="md"/>
+      </Grid>
     </Container>
   );
 }

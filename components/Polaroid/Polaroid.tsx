@@ -1,5 +1,13 @@
-import { Paper, Image, Text, Container, Transition, Overlay, BackgroundImage} from "@mantine/core";
-import {useHover} from '@mantine/hooks';
+import {
+  Paper,
+  Image,
+  Text,
+  Container,
+  Transition,
+  Overlay,
+  BackgroundImage,
+} from "@mantine/core";
+import { useHover } from "@mantine/hooks";
 import classes from "./Polaroid.module.css";
 
 interface PolaroidTypes {
@@ -10,13 +18,25 @@ interface PolaroidTypes {
 
 // The props (parameters) for polaroid are stated below, with their types specified by PolaroidTypes - see if you understand types but remind me to explain them to ya too haha
 export function Polaroid({ image, alt, caption }: PolaroidTypes) {
-const{hovered, ref} = useHover();
+  const { hovered, ref } = useHover();
   return (
     <Container className={classes.PolaroidBody}>
-      <Paper h={400} w={275} shadow="lg" className={classes.polaroid}  style={{backgroundColor: true ? 'white' : 'grey'}} ref={ref}>
-        {hovered ? 
-          <Text pt="10px" ta="center"> {caption} </Text>
-          :<Image radius="md" h={330} src={image} alt={alt}/>}
+      <Paper
+        h={400}
+        w={275}
+        shadow="lg"
+        className={classes.polaroid}
+        style={{ backgroundColor: true ? "white" : "grey" }}
+        ref={ref}
+      >
+        {hovered ? (
+          <Text pt="10px" ta="center">
+            {" "}
+            {caption}{" "}
+          </Text>
+        ) : (
+          <Image radius="md" h={330} src={image} alt={alt} />
+        )}
       </Paper>
     </Container>
   );
